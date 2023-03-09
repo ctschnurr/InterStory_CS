@@ -42,7 +42,7 @@ public class InteractionObject : MonoBehaviour
 
     public void Dialogue()
     {
-
+        FindObjectOfType<DialogueManager>().StartDialogue(sentences);
     }
 
     IEnumerator ShowInfo(string message, float delay)
